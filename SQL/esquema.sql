@@ -14,5 +14,3 @@ CREATE TABLE IF NOT EXISTS pessoa (
 	fator_kk	CHAR(1)		    NOT NULL CHECK(fator_kk IN ('K', 'k')),
 	CONSTRAINT 	pk_id			PRIMARY KEY(ID) 
 );
-
-select * from pessoa

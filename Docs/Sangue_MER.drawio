@@ -1,0 +1,583 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Página-1" id="1caeO5U3mhqNIvb1PwGT">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-63" value="Fator ABO" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="280.53999999999996" y="1073.3899999999999" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-12" value="Fator Ee" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="345.54" y="1124.19" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-13" value="Fator Cc" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="345.54" y="1139.19" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-14" value="Fator K" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="345.54" y="1154.58" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-89" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="831.3399999999999" y="940.39" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;shape=link;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-88" target="ZTCeOAqEkQX5hjRZxMYT-92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="869.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-88" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="526.34" y="945" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-79" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-168.03" y="880" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;shape=link;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-48" target="ZTCeOAqEkQX5hjRZxMYT-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="216.95999999999955" y="1150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="496" y="1674" />
+              <mxPoint x="201" y="1674" />
+            </Array>
+            <mxPoint x="590.1800000000001" y="1764.92" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-48" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="496.0700000000001" y="1636.27" width="180.08" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;shape=link;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-1" target="ZTCeOAqEkQX5hjRZxMYT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-1" value="Pessoa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="376.06999999999994" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-2" target="ZTCeOAqEkQX5hjRZxMYT-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-2" value="O" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="405.53999999999996" y="650" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-18" target="ZTCeOAqEkQX5hjRZxMYT-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-18" value="Doador" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-162.96" y="735" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-20" target="ZTCeOAqEkQX5hjRZxMYT-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="630" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-20" value="Receptor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="561.16" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WCIS-N_KBzi3OxWJN8cR-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-22" target="ZTCeOAqEkQX5hjRZxMYT-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="514.4567965643653" y="598.7867965643657" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-290" y="630" />
+              <mxPoint x="414" y="630" />
+            </Array>
+            <mxPoint x="-752.99" y="690" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WCIS-N_KBzi3OxWJN8cR-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;shape=link;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-22" target="ZTCeOAqEkQX5hjRZxMYT-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WCIS-N_KBzi3OxWJN8cR-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-22" target="WCIS-N_KBzi3OxWJN8cR-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-22" value="Profissional" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="725" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-24" target="ZTCeOAqEkQX5hjRZxMYT-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-24" value="Doa" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-143.03" y="910" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-25" value="Hemonúcleo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-162.96" y="1134.19" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;shape=link;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-29" target="ZTCeOAqEkQX5hjRZxMYT-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-29" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="25" y="910" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WCIS-N_KBzi3OxWJN8cR-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;shape=link;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-30" target="ZTCeOAqEkQX5hjRZxMYT-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-30" value="Gera" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="915" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-31" target="ZTCeOAqEkQX5hjRZxMYT-74">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="1138" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-31" target="ZTCeOAqEkQX5hjRZxMYT-94">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="860" />
+              <mxPoint x="730" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-31" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-32" value="Bolsa de sangue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="178.93" y="927.5" width="102.14" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-33" target="ZTCeOAqEkQX5hjRZxMYT-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-33" value="Hospital" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="531.88" y="1142.5800000000002" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-34" target="ZTCeOAqEkQX5hjRZxMYT-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-34" value="Ambulância" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="836.34" y="1142.58" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;shape=link;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-35" target="ZTCeOAqEkQX5hjRZxMYT-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-35" value="Local" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530.54" y="1430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-36" value="Transfere" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550.54" y="1636.27" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-37" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-36" target="ZTCeOAqEkQX5hjRZxMYT-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="536.88" y="1546.27" as="sourcePoint" />
+            <mxPoint x="586.88" y="1496.27" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-38" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-36" target="ZTCeOAqEkQX5hjRZxMYT-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="536.88" y="1546.27" as="sourcePoint" />
+            <mxPoint x="586.88" y="1496.27" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-42" value="Cidade" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740.76" y="1470" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-43" value="Rua" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740.76" y="1510" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-44" value="Bairro" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740.76" y="1490" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-45" value="Número" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740.76" y="1530" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-49" target="ZTCeOAqEkQX5hjRZxMYT-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-49" target="ZTCeOAqEkQX5hjRZxMYT-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-49" target="ZTCeOAqEkQX5hjRZxMYT-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-49" value="D" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="561.34" y="1290" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-62" value="Tipo" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="239.11999999999995" y="1055" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-64" value="Fator RH" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="280.54" y="1090.3899999999999" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-65" value="Fenotipagem" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="280.53999999999996" y="1109.19" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WCIS-N_KBzi3OxWJN8cR-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-69" target="ZTCeOAqEkQX5hjRZxMYT-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-420" y="1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-69" value="Trabalha" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-460" y="960" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-74" value="Envolve" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1138" width="81.33" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-82" target="ZTCeOAqEkQX5hjRZxMYT-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-82" value="Solicita" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="551.34" y="975" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-83" target="ZTCeOAqEkQX5hjRZxMYT-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-83" value="Socorre" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="851.34" y="970.8" width="88.66" height="79.2" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-92" target="ZTCeOAqEkQX5hjRZxMYT-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-92" value="Inclui" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="386.15999999999997" y="910" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;shape=link;" edge="1" parent="1" source="ZTCeOAqEkQX5hjRZxMYT-94" target="ZTCeOAqEkQX5hjRZxMYT-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-94" value="Necessita" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="900" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-102" value="Capacidade" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="648.09" y="1600.0043593090797" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-110" value="Última Doação" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-72.96000000000001" y="765.0043593090797" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-111" value="Peso" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-72.96000000000001" y="785.0043593090797" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-117" value="Solicitação" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="525" y="910.39" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-118" value="Socorrimento" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="828.3" y="910" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-119" value="&lt;u&gt;Data&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="1010" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-120" value="Nota 1." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="25" y="1015" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WCIS-N_KBzi3OxWJN8cR-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;shape=link;" edge="1" parent="1" source="WCIS-N_KBzi3OxWJN8cR-8" target="ZTCeOAqEkQX5hjRZxMYT-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WCIS-N_KBzi3OxWJN8cR-8" value="Auxilia" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="910" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WCIS-N_KBzi3OxWJN8cR-12" value="Doação" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="850" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-1" value="" style="shape=requiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="224.91" y="610" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-1" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="126.42" y="920" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-2" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-23.03" y="920" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-2" value="" style="shape=requiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="176.88" y="680" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-3" value="" style="shape=requiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="454.90999999999997" y="730" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-4" value="" style="shape=requiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="401.34" y="1300" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-6" value="" style="shape=requiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1300" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-7" value="" style="shape=requiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="575" y="1230.85" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-8" value="&#39;Transfusão&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="596.34" y="1218" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-9" value="&#39;Socorro&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="826.34" y="1298" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-10" value="&#39;Coleta&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="330" y="1290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-11" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="720" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-12" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1112.58" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-13" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="594.9999999999999" y="795" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-14" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="598.6599999999999" y="1104.19" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-15" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-95.46000000000001" y="805" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-16" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-95.46000000000001" y="1090" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-6" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="925" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-17" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="820" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-7" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="478.30000000000007" y="990" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-18" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="918" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-8" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="194.91" y="1005" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-19" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="720" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-20" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="442.5900000000001" y="1422.46" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-10" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="274.99999999999994" y="825" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-11" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="770" y="979.9999999999999" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-23" value="transfere" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="528.0300000000001" y="1500" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-24" value="recebe" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="595" y="1500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-25" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="651.8800000000001" y="1500" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-26" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="508.3" y="1500" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-14" value="trabalha" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="760" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-29" value="Nro. Bolsas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="598.93" y="1740" width="120" height="21.91" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-31" value="Nota 3." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="713.66" y="1706.27" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-30" value="" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="588.93" y="1731.27" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-28" value="&lt;u&gt;Data&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="595" y="1711.27" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-16" value="recebe trabalho" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="405.5400000000001" y="1465" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-17" value="auxilia" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-18" value="recebe auxílio" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="960" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZkaHDJ8COHqd-k_tjV8-32" value="Nro. Bolsas" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="598.93" y="1737.54" width="120" height="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-19" value="recebe doação" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-168.03" y="1089.19" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-20" value="doa" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-162.96" y="805" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-21" value="é gerada" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="111.42" y="950" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-22" value="gera" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-38.03" y="955" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-24" value="é incluida" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="316.07" y="948" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-25" value="inclui" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="463.3" y="1013.39" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-26" value="é necessitada" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="865" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-27" value="necessita" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="751.3399999999999" y="1010.0000000000001" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-28" value="é socorrido" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="750" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-29" value="socorre" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="826.34" y="1112.58" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-30" value="solicita" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="528.03" y="795" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-31" value="recebe solicitação" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="516.3399999999999" y="1104.19" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPvWc5-KUp9aaUPblbi5-33" value="é envolvida" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="119.99999999999997" y="1005" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-1" value="Local atual" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="241.33000000000004" y="1035" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-5" value="Transferência" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="472.5900000000001" y="1610" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-9" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="438.30000000000007" y="1640" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-10" value="envolve" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="423.3000000000002" y="1676.27" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-13" value="Nota 5." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="756.4699999999999" y="1430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-15" value="" style="ellipse;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFFFF);dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="643.17" y="1550" width="127.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-16" value="Inventário" style="ellipse;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFFFF);dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="646.92" y="1555" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-18" value="Tipo" style="ellipse;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="646.92" y="1580" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-19" value="Nota 6." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="930" y="975" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-21" value="Tipo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="600.54" y="1350" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-22" value="Vínculo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="375.53999999999996" y="545" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-24" value="&#39;Profissional&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="286.07" y="590" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-25" value="&#39;Doador&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="266.88" y="700" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-26" value="&#39;Receptor&#39;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="480" y="725" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-27" value="Nota 7." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="990" y="1082.5800000000002" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-28" value="&lt;u&gt;Data&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="906.3399999999999" y="1069.1900000000003" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-29" value="&lt;u&gt;Data&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610.0000000000001" y="1073.39" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-30" value="Nota 8." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="701.34" y="1082.58" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-4" value="Nota 9." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="766.92" y="1550" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-5" value="Nota 10." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="716.96" y="1740" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-8" value="Número" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="236.88000000000002" y="975" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-9" value="" style="endArrow=none;html=1;rounded=0;exitX=0.255;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.725;entryY=0.786;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="Kus8kc2OgP2ftLhveMZU-8" target="Kus8kc2OgP2ftLhveMZU-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="265.55" y="800" as="sourcePoint" />
+            <mxPoint x="315.55" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-66" value="Volume real" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="239.12" y="1014.9999999999999" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-8" value="Nota 4." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="339.12" y="1015" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-67" value="Nota 2." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="340.54" y="1035" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-17" value="Fator K" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="640.39" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-16" value="Fator Cc" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="625" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Kus8kc2OgP2ftLhveMZU-15" value="Fator Ee" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="610" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-8" value="Fenotipagem" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="552.5899999999999" y="600" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-7" value="Fator ABO" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="552.5899999999999" y="580" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-6" value="Fator RH" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="552.5899999999999" y="560" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-5" value="Fatores do Sangue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="472.59" y="550" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dvieMJIZeJfsZl4K56aK-2" value="" style="ellipse;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="471.8299999999998" y="520" width="127.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-11" value="Vínculo" style="ellipse;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#3399FF);" vertex="1" parent="1">
+          <mxGeometry x="475.5799999999998" y="525" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-16" value="Número" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="556.1499999999999" y="500" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-14" value="Rua" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="556.1499999999999" y="480" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-15" value="Bairro" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="556.1499999999999" y="460" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-13" value="Cidade" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="556.1499999999999" y="440" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-12" value="Endereço" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="472.59" y="430" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-10" value="Contato&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="472.59" y="410" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-9" value="Nome" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="472.59" y="390" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-4" value="RG" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="472.59" y="370" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-3" value="&lt;u&gt;CPF&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="472.59" y="350" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-40" value="&lt;u&gt;CNPJ/Placa&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="646.92" y="1440" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTCeOAqEkQX5hjRZxMYT-41" value="Endereço" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="646.92" y="1460" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tbO-XjESjNXlBMQ6eXsV-4" value="&lt;div&gt;&lt;div class=&quot;markdown markdown-main-panel stronger enable-updated-hr-color&quot; id=&quot;model-response-message-contentr_c5ca9f9526685f05&quot; dir=&quot;ltr&quot; style=&quot;--animation-duration: 400ms; --fade-animation-function: linear; animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 0, 0));&quot;&gt;Notas:&lt;/font&gt;&lt;/p&gt;&lt;ol start=&quot;1&quot; style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 28px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; padding-inline-start: 32px; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;A agregação &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&quot;Doação&quot;&lt;/span&gt; possui chave composta por: &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;CPF&lt;/span&gt; (do doador), &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;CNPJ&lt;/span&gt; (do hemonúcleo) e &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;DATA&lt;/span&gt;.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;O volume total da bolsa de sangue é &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;450ml&lt;/span&gt;, mas o volume real doado depende do peso do doador.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;A agregação &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&quot;Transferência&quot;&lt;/span&gt; possui chave composta por: &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;ID&lt;/span&gt; do local de origem, &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;ID&lt;/span&gt; do local destino e &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;DATA&lt;/span&gt;.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;O local de atual, a priori, corresponde ao identificador do hemocentro no qual a bolsa de sangue foi gerada. Posteriormente, o local atual é alterado quando ocorre a transferência da bolsa de sangue de um local para outro, checando se o local de origem coincide com o atual local da bolsa de sangue. Por último, caso a transferência seja válida, o local atual&amp;nbsp; da bolsa corresponde ao local de destino da última transferência feita.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;O identificação do local se dá pelo &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;CNPJ&lt;/span&gt; (para local fixo) ou &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;placa&lt;/span&gt; (para local móvel).&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;Ao receptor solicitar uma bolsa de um hospital ou ser socorrido por uma ambulância, é verificado se o local solicitado ou de socorrimento corresponde ao local atual da bolsa de sangue que está sendo repassada para o receptor. Caso esse requisito seja satisfeito, a bolsa perde disponibilidade, devido ao seu uso.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;A agregação &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&quot;Socorrimento&quot;&lt;/span&gt; possui chave composta por: &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;Placa&lt;/span&gt; da ambulância, &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;CPF&lt;/span&gt; do receptor e &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;DATA&lt;/span&gt;.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;A agregação &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&quot;Solicitação&quot;&lt;/span&gt; possui chave composta por: &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;CNPJ&lt;/span&gt; do hospital, &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;CPF&lt;/span&gt; do receptor e &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;DATA&lt;/span&gt;.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;O atributo derivado e multivalorado &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&quot;Inventário&quot;&lt;/span&gt; da entidade &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&quot;Local&quot;&lt;/span&gt; contém as quantidades de bolsas de cada um dos possíveis tipos sanguíneos, sendo atualizado a cada vez que esse local recebe uma doação ou transferência, e a cada vez que o local recebe uma solicitação ou socorre um receptor.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;O atributo derivado e multivalorado &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&quot;Nro Bolsas&quot;&lt;/span&gt; da entidade agregada &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&quot;Transferência&quot;&lt;/span&gt; possui a quantidades de bolsas de sangue, de cada um dos diferentes tipos sanguíneos, que estão envolvidas à transferência, sendo calculadas com base no relacionando &lt;span style=&quot;animation: 0s ease 0s 1 normal none running none; appearance: none; background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&quot;Envolve&quot;&lt;/span&gt; entre as transferências e as bolsas de sangue.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;p style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 8px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px 0px 0px 4px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;&lt;font&gt;&lt;span style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;Solicitação&lt;/span&gt;, &lt;span style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;socorrimento&lt;/span&gt; e &lt;span style=&quot;background-image: none; background-position: 0% 0%; background-size: auto; background-repeat: repeat; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; animation: 0s ease 0s 1 normal none running none; appearance: none; border: 0px none rgb(27, 28, 29); inset: auto; clear: none; clip: auto; columns: auto; contain: none; container: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; display: inline; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; gap: normal; hyphens: manual; interactivity: auto; isolation: auto; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; marker: none; mask: none; offset: normal; opacity: 1; order: 0; outline: rgb(27, 28, 29) none 0px; overlay: none; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rotate: none; rx: auto; ry: auto; scale: none; speak: normal; stroke: none; transform: none; transition: all; translate: none; visibility: visible; x: 0px; y: 0px; zoom: 1; margin-top: 0px !important; line-height: 1.15 !important;&quot;&gt;transferência&lt;/span&gt; de bolsas só ocorrem se as mesmas estiverem disponíveis.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=default;labelBackgroundColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="450" width="360" height="1205" as="geometry" />
+        </mxCell>
+        <mxCell id="tbO-XjESjNXlBMQ6eXsV-5" value="Modelo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1194.1899999999998" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tbO-XjESjNXlBMQ6eXsV-6" value="Sede" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1214.1899999999998" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Bimret-Ws4Iqn3lCgZEH-2" value="CRV" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1234.19" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tbO-XjESjNXlBMQ6eXsV-8" value="Disponível" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="236.88" y="993.39" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tbO-XjESjNXlBMQ6eXsV-9" value="Nota 11." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=light-dark(#000000,#FF0000);" vertex="1" parent="1">
+          <mxGeometry x="334.12" y="990" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
