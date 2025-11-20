@@ -1,6 +1,6 @@
 /*
         Esquema SQL referente ao banco de dados do sistema de doaçao de sangue (Grupo 06)
-        Alunos:
+        Autores:
                - Danielle Pereira - 11918539
                - Gabriel Dezejácomo Maruschi - 14571525
                - Pedro Gasparelo Leme - 14602421

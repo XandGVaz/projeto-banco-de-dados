@@ -1,3 +1,12 @@
+/*
+        Script SQL para drop de tabelas criadas em esquema.sql, possibilitando reinsercao de dados
+        Autores:
+               - Danielle Pereira - 11918539
+               - Gabriel Dezejácomo Maruschi - 14571525
+               - Pedro Gasparelo Leme - 14602421
+               - Vitor Alexandre Garcia Vaz - 14611432
+*/
+
 DROP TABLE IF EXISTS envolve;
 DROP TABLE IF EXISTS bolsa_de_sangue;
 DROP TABLE IF EXISTS socorrimento;
