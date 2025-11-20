@@ -19,13 +19,14 @@ projeto-banco-de-dados/
 │  └─ Sangue_Relacional.jpg
 ├─ README.md
 └─ SQL/
+   ├─ drop.sql
    └─ esquema.sql
 ```
 
 Breve explicação dos diretórios:
 - `Application/` : código do aplicativo (ex.: scripts para demonstrar o uso do banco de dados).
 - `Docs/` : diagramas (MER e modelo relacional) em formato draw.io.
-- `SQL/` : scripts SQL com o esquema e possivelmente dados de exemplo.
+- `SQL/` : scripts SQL com o esquema, inserção de dados e operações.
 
 Observações:
 - Os arquivos `.drawio` contêm os diagramas (MER e modelo relacional).
