@@ -8,14 +8,14 @@
         - Vitor Alexandre Garcia Vaz - 14611432
 """
 
-#=============================================================================================#
+#=========================================================================================================#
 # Importa as bibliotecas necessárias
 import psycopg2 as pg               # Biblioteca para conectar ao PostgreSQL
 import dotenv                       # Biblioteca para carregar variáveis de ambiente
 import os                           # Biblioteca para interagir com o sistema operacional
 import sys                          # Biblioteca para manipular o sistema Python
 
-#=============================================================================================#
+#=========================================================================================================#
 """"
     Conexão com banco de dados usando variáveis de ambiente
         - Variáveis definidas no arquivo .env
@@ -42,30 +42,23 @@ def connect_db() -> pg.extensions.connection:
         "port":     int(os.getenv("DB_PORT", "5432"))
     }
 
+    # Tenta conectar ao banco de dados
     try:
-        # Estabelece a conexão
-        connection = pg.connect(**db_params)
-        
-        return connection
+        connection = pg.connect(**db_params)  # Estabelece a conexão
+        return connection                     # Retorna a conexão estabelecida
 
     # Trata erros de conexão
     except (Exception, pg.Error) as error:
-        print(f"Erro ao conectar ao PostgreSQL: {error}")
-        sys.exit(1)
+        print(f"Erro ao conectar ao PostgreSQL: {error}")   # Exibe o erro
+        sys.exit(1)                                         # Sai do programa com código de erro        
 
-#=============================================================================================#
+#=========================================================================================================#
 # Função principal do script
 def main():
 
-    # Tenta conectar ao banco de dados
-    try:
-        # Estabelece a conexão
-        connect = pg.connect(**db_params)
+    # Estabelece a conexão com banco postgreSQL
+    connect = connect_db()
 
-    # Trata erros de conexão
-    except (Exception, pg.Error) as error:
-        print(f"Erro ao conectar ao PostgreSQL: {error}")
-        sys.exit(1)
 
 
 # Ponto de entrada do script
