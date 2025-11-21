@@ -1,4 +1,14 @@
+"""
+    Programa python referente à aplicação utilizando banco de dados do sistema de 
+    doaçao de sangue (Grupo 06)
+    Autores:
+        - Danielle Pereira - 11918539
+        - Gabriel Dezejácomo Maruschi - 14571525
+        - Pedro Gasparelo Leme - 14602421
+        - Vitor Alexandre Garcia Vaz - 14611432
+"""
 
+#=============================================================================================#
 # Importa as bibliotecas necessárias
 import psycopg2 as pg               # Biblioteca para conectar ao PostgreSQL
 import dotenv                       # Biblioteca para carregar variáveis de ambiente
@@ -13,17 +23,35 @@ import sys                          # Biblioteca para manipular o sistema Python
         variáveis corretas
 """
 
-# Carrega as variáveis de ambiente do arquivo .env
-dotenv.load_dotenv()
+"""
+Função para conectar ao banco de dados PostgreSQL usando os parâmetros definidos.
+    Retorna:
+        - connection : conexão ao banco de dados PostgreSQL.
+"""
+def connect_db() -> pg.extensions.connection:
+    
+    # Carrega as variáveis de ambiente do arquivo .env
+    dotenv.load_dotenv()
 
-# Define os parâmetros de conexão usando as variáveis de ambiente
-db_params = {
-    "database": os.getenv("DB_DATABASE", "projeto-banco-de-dados"),
-    "user":     os.getenv("DB_USER", "postgres"),
-    "password": os.getenv("DB_PASSWORD", "postgres"),
-    "host":     os.getenv("DB_HOST", "localhost"),
-    "port":     int(os.getenv("DB_PORT", "5432"))
-}
+    # Define os parâmetros de conexão usando as variáveis de ambiente
+    db_params = {
+        "database": os.getenv("DB_DATABASE", "projeto-banco-de-dados"),
+        "user":     os.getenv("DB_USER", "postgres"),
+        "password": os.getenv("DB_PASSWORD", "postgres"),
+        "host":     os.getenv("DB_HOST", "localhost"),
+        "port":     int(os.getenv("DB_PORT", "5432"))
+    }
+
+    try:
+        # Estabelece a conexão
+        connection = pg.connect(**db_params)
+        
+        return connection
+
+    # Trata erros de conexão
+    except (Exception, pg.Error) as error:
+        print(f"Erro ao conectar ao PostgreSQL: {error}")
+        sys.exit(1)
 
 #=============================================================================================#
 # Função principal do script
