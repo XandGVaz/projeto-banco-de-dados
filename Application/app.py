@@ -66,7 +66,7 @@ def principal_menu() -> int:
     result = 0
     
     # Exibe o menú principal
-    print("=============== Menu do Sistema de Doação de Sangue ==================")
+    print("=================== Menu do Sistema de Doação de Sangue ==================")
     print("1. Cadastrar Receptor")
     print("2. Consultar locais com estoque de sangue compatível")
     print("3. Sair\n")
@@ -102,7 +102,7 @@ def register_receptor_form() -> list:
     form = []
 
     # Coleta os dados do formulário
-    print("=============== Insira dados do receptor ==================")
+    print("================== Insira dados do receptor ==================")
     CPF = input("CPF: ")
     RG = input("RG: ")
     UF = input("UF: ")
@@ -137,7 +137,7 @@ dbGetPessoaIdQuery = """
     Retorna: 
         - id: ID da pessoa correspondente ao CPF fornecido, ou None se não encontrado
 """
-def get_pessoa_id(connect: pg.extensions.connection, CPF: str) -> int | None:
+def get_person_id(connect: pg.extensions.connection, CPF: str) -> int | None:
     
     # Inicializa variáveis
     cur: pg.extensions.connection | None = None
@@ -206,7 +206,7 @@ def verify_receptor_exists(connect: pg.extensions.connection, id: int) -> bool:
     return result                                       
 
 # Query para inserção de pessoa
-dbInsertPessoaQuery = """
+dbInsertPersonQuery = """
     INSERT INTO pessoa (cpf, rg, uf, nome, contato, cidade, bairro, rua, numero, fator_rh, fator_abo
     , fator_ee, fator_cc, fator_kk)
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
@@ -221,7 +221,7 @@ dbInsertPessoaQuery = """
     Retorna: 
         - id: ID da pessoa inserida, ou None se a inserção falhar
 """
-def insert_pessoa(connect: pg.extensions.connection, params: list) -> int | None:
+def insert_person(connect: pg.extensions.connection, params: list) -> int | None:
     # Inicializa variáveis
     cur: pg.extensions.connection | None = None
     id: int | None = None
@@ -229,7 +229,7 @@ def insert_pessoa(connect: pg.extensions.connection, params: list) -> int | None
     # Executa a query para inserção de pessoam com dados do receptor
     try:
         cur = connect.cursor()                              # cria o cursor para executar a query
-        cur.execute(dbInsertPessoaQuery, params)            # executa a query com parâmetros fornecidos
+        cur.execute(dbInsertPersonQuery, params)            # executa a query com parâmetros fornecidos
         tuple = cur.fetchone()                              # obtenção de uma linha d resultado da operação
         if tuple is not None:                               # se a inserção ocorreu adequadamente, extrai id
             id = tuple[0]
@@ -238,7 +238,7 @@ def insert_pessoa(connect: pg.extensions.connection, params: list) -> int | None
     # Trata erros de execução da query
     except pg.Error as error:
         connect.rollback();                                                     # rollback em caso de erro
-        raise RuntimeError (f"Falha na query \"dbInsertPessoaQuery\": {error}") # trata erros de execução da query
+        raise RuntimeError (f"Falha na query \"dbInsertPersonQuery\": {error}") # trata erros de execução da query
     
     # Fecha o cursor
     finally: 
@@ -290,19 +290,19 @@ def register_receptor(connect: pg.extensions.connection) -> None:
         form = register_receptor_form()
 
         # Tenta obter o ID da pessoa a partir do CPF fornecido
-        id = get_pessoa_id(connect, form[0])
+        id = get_person_id(connect, form[0])
 
         # Verifica se a pessoa já existe no banco de dados
         if id is None:
             # Insere a nova pessoa no banco de dados
-            id = insert_pessoa(connect, form)
+            id = insert_person(connect, form)
             if id is None:
-                print("Falha ao cadastrar a pessoa.")
+                print("================== Falha ao cadastrar a pessoa ================== \n\n")
                 return
             
         # Verifica se o receptor já está cadastrado
         if verify_receptor_exists(connect, id):
-            print("Receptor já cadastrado no sistema.")
+            print("================== Receptor já cadastrado no sistema ================== \n\n")
             return
         
         # Insere o receptor no banco de dados
@@ -310,15 +310,119 @@ def register_receptor(connect: pg.extensions.connection) -> None:
 
     # Trata erros durante o processo de cadastro
     except RuntimeError as error:
-        print(f"Erro ao cadastrar receptor: {error}")
+        print(f"================== Erro ao cadastrar receptor ================== \n {error} \n\n")
         return
     
     # Confirma o sucesso do cadastro
-    print("Receptor cadastrado com sucesso.")
+    print("================== Receptor cadastrado com sucesso ================== \n\n ")
 
 #=========================================================================================================#
-#Obtenção de locais com estoque de sangue compatível ao receptor
+# Obtenção de locais com estoque de sangue de um dado tipo
 
+"""
+    Função para exibir o formulário de busca de locais com estoque de sangue de um dado tipo
+    Retorna: 
+        - form: lista contendo os fatores sanguíneos a serem consultados
+"""
+def search_blood_type_locations_form() -> list:
+    # Inicializa a lista do formulário
+    form = []
+
+    # Coleta os dados do formulário
+    print("================== Insira dados do tipo sanguíneo de busca ==================")
+    Fator_RH = input("Fator RH (+ ou -): ")
+    Fator_ABO = input("Fator ABO (A, B, AB ou O): ")
+    Fator_Ee = input("Fator Ee (E ou e): ")  
+    Fator_Cc = input("Fator Cc (C ou c): ")
+    Fator_Kk = input("Fator Kk (K ou k): ")
+
+    # Monta a lista com os dados do formulário
+    form = [Fator_RH, Fator_ABO, Fator_Ee, Fator_Cc, Fator_Kk]
+    
+    # Retorna o formulário preenchido
+    return form
+
+    
+
+# Query para obter os locais com estoque de sangue de um dado tipo
+dbGetLocationsWithBloodTypeQuery = """
+    SELECT 
+        l.id as "local",
+        l.tipo as "tipo",
+        i.estoque as "quantidade"
+    FROM local l
+    INNER JOIN inventario i ON l.id = i.local
+    WHERE 
+        i.fator_rh = %s
+        AND i.fator_abo = %s
+        AND i.fator_ee = %s
+        AND i.fator_cc = %s
+        AND i.fator_kk = %s
+"""
+
+"""
+    Função para obter os locais com estoque de sangue de um dado tipo
+    Parametros:
+        - connect: conexão com o banco de dados PostgreSQL
+        - params: lista contendo os fatores sanguíneos a serem consultados
+    Retorna: 
+        - locations: lista de locais com estoque do tipo sanguíneo consultado, ou None se nenhum local for encontrado
+"""
+def get_locations_with_blood_type(connect: pg.extensions.connection, params: list) -> list | None:
+    
+    # Inicializa variáveis
+    cur: pg.extensions.connection | None = None
+    locations: list | None = None
+    
+    # Executa a query para obter o ID da pessoa
+    try:
+        
+        cur = connect.cursor()                                 # cria o cursor para executar a query
+        cur.execute(dbGetLocationsWithBloodTypeQuery, params)  # cxecuta a query com o CPF fornecido
+        locations = cur.fetchall()                             # obtém uma linha do resultado da query
+        connect.commit()                                       # confirma a transação
+
+        # Verifica se algum local foi retornado, se não, lança erro
+        if (locations is None) or (not locations):
+            raise RuntimeError(f"Nenhum local retornado pela query para os parâmetros: {params}")
+    
+    # Trata erros de execução da query
+    except pg.Error as error:
+        connect.rollback();                                                                   # rollback em caso de erro
+        raise RuntimeError (f"Falha na query \"dbGetLocationsWithBloodTypeQuery\": {error}")  # trata erros de execução da query
+    
+    # Fecha o cursor
+    finally: 
+        if cur is not None:
+            cur.close()
+    
+    # Retorna locais com tipo sanguíneo buscado
+    return locations       
+
+"""
+    Função para consultar e exibir os locais com estoque de sangue de um dado tipo
+    Parametros:
+        - connect: conexão com o banco de dados PostgreSQL
+"""
+def consult_locations_with_blood_type(connect: pg.extensions.connection) -> None:
+    try:
+        # Obtém os dados do formulário de busca de locais com estoque de sangue de um dado tipo
+        form = search_blood_type_locations_form()
+
+        # Tenta obter os locais com estoque do tipo sanguíneo consultado
+        locations = get_locations_with_blood_type(connect, form)
+        
+        # Exibe os locais encontrados
+        print("================== Locais com estoque do tipo sanguíneo consultado ==================")
+        for location in locations:
+            id, tipo, quantidade = location
+            print(f"Local: {id}, Tipo: {tipo}, Quantidade em estoque: {quantidade}")
+        print("====================================================================\n\n")
+
+    # Trata erros durante o processo de consulta
+    except RuntimeError as error:
+        print(f"================== Erro ao consultar locais com estoque do tipo sanguíneo ================== \n {error} \n\n")
+        return
         
 #=========================================================================================================#
 # Função principal do script
@@ -338,6 +442,7 @@ def main():
                 register_receptor(connect)
                 continue
             case 2:
+                consult_locations_with_blood_type(connect)
                 continue
             case 3:
                 connect.close()
