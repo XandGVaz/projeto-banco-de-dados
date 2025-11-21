@@ -1,0 +1,45 @@
+
+# Importa as bibliotecas necessárias
+import psycopg2 as pg               # Biblioteca para conectar ao PostgreSQL
+import dotenv                       # Biblioteca para carregar variáveis de ambiente
+import os                           # Biblioteca para interagir com o sistema operacional
+import sys                          # Biblioteca para manipular o sistema Python
+
+#=============================================================================================#
+""""
+    Conexão com banco de dados usando variáveis de ambiente
+        - Variáveis definidas no arquivo .env
+        - OBS: Certifique-se de ter o arquivo .env na pasta Application do projeto com as 
+        variáveis corretas
+"""
+
+# Carrega as variáveis de ambiente do arquivo .env
+dotenv.load_dotenv()
+
+# Define os parâmetros de conexão usando as variáveis de ambiente
+db_params = {
+    "database": os.getenv("DB_DATABASE", "projeto-banco-de-dados"),
+    "user":     os.getenv("DB_USER", "postgres"),
+    "password": os.getenv("DB_PASSWORD", "postgres"),
+    "host":     os.getenv("DB_HOST", "localhost"),
+    "port":     int(os.getenv("DB_PORT", "5432"))
+}
+
+#=============================================================================================#
+# Função principal do script
+def main():
+
+    # Tenta conectar ao banco de dados
+    try:
+        # Estabelece a conexão
+        connect = pg.connect(**db_params)
+
+    # Trata erros de conexão
+    except (Exception, pg.Error) as error:
+        print(f"Erro ao conectar ao PostgreSQL: {error}")
+        sys.exit(1)
+
+
+# Ponto de entrada do script
+if "__name__" == "__main__":
+    main()
