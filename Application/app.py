@@ -98,29 +98,37 @@ def principal_menu() -> int:
         - form: lista contendo os dados da pessoa receptor
 """
 def register_receptor_form() -> list:
+
     # Inicializa a lista do formulário
     form = []
 
-    # Coleta os dados do formulário
-    print("================== Insira dados do receptor ==================")
-    CPF = input("CPF: ")
-    RG = input("RG: ")
-    UF = input("UF: ")
-    Nome = input("Nome completo: ")
-    Contato = input("Contato telefônico: ")
-    Cidade = input("Cidade: ")
-    Bairro = input("Bairro: ")
-    Rua = input("Rua: ")
-    Numero = input("Número: ")
-    Fator_RH = input("Fator RH (+ ou -): ")
-    Fator_ABO = input("Fator ABO (A, B, AB ou O): ")
-    Fator_Ee = input("Fator Ee (E ou e): ")  
-    Fator_Cc = input("Fator Cc (C ou c): ")
-    Fator_Kk = input("Fator Kk (K ou k): ")
+    # Tenta coletar os dados do formulário
+    try:
 
-    # Monta a lista com os dados do formulário
-    form = [CPF, RG, UF, Nome, Contato, Cidade, Bairro, Rua, Numero, Fator_RH, Fator_ABO, Fator_Ee, Fator_Cc, Fator_Kk]
-    
+        # Coleta os dados do formulário
+        print("================== Insira dados do receptor ==================")
+        CPF = input("CPF: ")
+        RG = input("RG: ")
+        UF = input("UF: ")
+        Nome = input("Nome completo: ")
+        Contato = input("Contato telefônico: ")
+        Cidade = input("Cidade: ")
+        Bairro = input("Bairro: ")
+        Rua = input("Rua: ")
+        Numero = input("Número: ")
+        Fator_RH = input("Fator RH (+ ou -): ")
+        Fator_ABO = input("Fator ABO (A, B, AB ou O): ")
+        Fator_Ee = input("Fator Ee (E ou e): ")  
+        Fator_Cc = input("Fator Cc (C ou c): ")
+        Fator_Kk = input("Fator Kk (K ou k): ")
+
+        # Monta a lista com os dados do formulário
+        form = [CPF, RG, UF, Nome, Contato, Cidade, Bairro, Rua, Numero, Fator_RH, Fator_ABO, Fator_Ee, Fator_Cc, Fator_Kk]
+
+    # Trata erros durante o preenchimento do formulário
+    except Exception as error:          
+        raise RuntimeError(f"Erro ao preencher o formulário de registro de receptor: {error}")
+
     # Retorna o formulário preenchido
     return form
 
@@ -325,19 +333,27 @@ def register_receptor(connect: pg.extensions.connection) -> None:
         - form: lista contendo os fatores sanguíneos a serem consultados
 """
 def search_blood_type_locations_form() -> list:
+    
     # Inicializa a lista do formulário
     form = []
 
-    # Coleta os dados do formulário
-    print("================== Insira dados do tipo sanguíneo de busca ==================")
-    Fator_RH = input("Fator RH (+ ou -): ")
-    Fator_ABO = input("Fator ABO (A, B, AB ou O): ")
-    Fator_Ee = input("Fator Ee (E ou e): ")  
-    Fator_Cc = input("Fator Cc (C ou c): ")
-    Fator_Kk = input("Fator Kk (K ou k): ")
+    # Tenta coletar os dados do formulário
+    try:
 
-    # Monta a lista com os dados do formulário
-    form = [Fator_RH, Fator_ABO, Fator_Ee, Fator_Cc, Fator_Kk]
+        # Coleta os dados do formulário
+        print("================== Insira dados do tipo sanguíneo de busca ==================")
+        Fator_RH = input("Fator RH (+ ou -): ")
+        Fator_ABO = input("Fator ABO (A, B, AB ou O): ")
+        Fator_Ee = input("Fator Ee (E ou e): ")  
+        Fator_Cc = input("Fator Cc (C ou c): ")
+        Fator_Kk = input("Fator Kk (K ou k): ")
+
+        # Monta a lista com os dados do formulário
+        form = [Fator_RH, Fator_ABO, Fator_Ee, Fator_Cc, Fator_Kk]
+
+    # Trata erros durante o preenchimento do formulário
+    except Exception as error:          
+        raise RuntimeError(f"Erro ao preencher o formulário de busca de locais com estoque de sangue: {error}")
     
     # Retorna o formulário preenchido
     return form
