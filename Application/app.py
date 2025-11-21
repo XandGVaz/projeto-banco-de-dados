@@ -53,9 +53,7 @@ def connect_db() -> pg.extensions.connection:
         sys.exit(1)                                         # Sai do programa com código de erro
 
 #=========================================================================================================#
-""""
-    Exibição de menú do programa
-"""
+# Exibição de menú do programa
 
 """"
     Função para exibição de menú do programa
@@ -92,9 +90,7 @@ def principal_menu() -> int:
     return result
 
 #=========================================================================================================#
-"""
-    Registro de receptor
-"""
+#Registro de receptor
 
 """
     Função para exibir o formulário de registro de receptor
@@ -125,11 +121,12 @@ def register_receptor_form() -> list:
     # Monta a lista com os dados do formulário
     form = [CPF, RG, UF, Nome, Contato, Cidade, Bairro, Rua, Numero, Fator_RH, Fator_ABO, Fator_Ee, Fator_Cc, Fator_Kk]
     
+    # Retorna o formulário preenchido
     return form
 
 # Query para obter o ID da pessoa a partir do CPF
 dbGetPessoaIdQuery = """
-    SELECT id FROM pessoa WHERE CPF = %s
+    SELECT id FROM pessoa WHERE CPF = %s;
 """
 
 """
@@ -143,36 +140,35 @@ dbGetPessoaIdQuery = """
 def get_pessoa_id(connect: pg.extensions.connection, CPF: str) -> int | None:
     
     # Inicializa variáveis
-    cur = None
-    id = None
+    cur: pg.extensions.connection | None = None
+    id: int | None = None
     
     # Executa a query para obter o ID da pessoa
     try:
         
-        cur = connect.cursor()                  # Cria o cursor para executar a query
-        cur.execute(dbGetPessoaIdQuery, [CPF])  # Executa a query com o CPF fornecido
-        tuple = cur.fetchone()                  # Obtém o resultado da query
-        
-        if tuple is not None:                   # Verifica se um resultado foi retornado
+        cur = connect.cursor()                  # cria o cursor para executar a query
+        cur.execute(dbGetPessoaIdQuery, [CPF])  # cxecuta a query com o CPF fornecido
+        tuple = cur.fetchone()                  # obtém uma linha do resultado da query
+        if tuple is not None:                   # verifica se um resultado foi retornado
             id = int(tuple[0])
-        
-        connect.commit()                        # Confirma a transação
+        connect.commit()                        # confirma a transação
 
     # Trata erros de execução da query
-    except pg.Error as error:                   
-        print(f"Erro na query: {error}")
+    except pg.Error as error:
+        connect.rollback();                                                     # rollback em caso de erro
+        raise RuntimeError (f"Falha na query \"dbGetPessoaIdQuery\": {error}")  # trata erros de execução da query
     
     # Fecha o cursor
     finally: 
         if cur is not None:
             cur.close()
-
-    # Retorna o ID da pessoa ou None
-    return id
+    
+    # Retorna id referente ao CPF
+    return id                               
 
 # Query para verificar se o receptor existe
-dbQueryVerifyReceptorExists = """
-    SELECT 1 FROM receptor WHERE id = %s
+dbVerifyReceptorExistsQuery = """
+    SELECT 1 FROM receptor WHERE id = %s;
 """
 
 """
@@ -181,31 +177,147 @@ dbQueryVerifyReceptorExists = """
         - connect: conexão com o banco de dados PostgreSQL
         - id: ID do receptor a ser verificado
     Retorna: 
-        - result: True se o receptor existir, False se não existir, ou None em caso de erro
+        - result: True se o receptor existir, False se não existir
 """
-def verify_receptor_exists(connect: pg.extensions.connection, id: int) -> bool | None :
+def verify_receptor_exists(connect: pg.extensions.connection, id: int) -> bool:
+    
     # Inicializa variáveis
-    cur = None
+    cur: pg.extensions.connection | None = None
+    result: bool = False
     
     # Executa a query para verificar se o receptor existe
     try:
-        cur = connect.cursor()                              # Cria o cursor para executar a query
-        cur.execute(dbQueryVerifyReceptorExists, [id])      # Executa a query com o ID fornecido
-        result = cur.fetchone() is not None                 # Verifica se um resultado foi retornado
-        
-        connect.commit()                                    # Confirma a transação
-        
-        return result                                       # Retorna o resultado da verificação        
+        cur = connect.cursor()                              # cria o cursor para executar a query
+        cur.execute(dbVerifyReceptorExistsQuery, [id])      # executa a query com o ID fornecido
+        result = cur.fetchone() is not None                 # verifica se um resultado foi retornado
+        connect.commit()                                    # confirma a transação     
 
     # Trata erros de execução da query
-    except pg.Error as error:                       
-        print(f"Erro na query: {error}")
-        return None
+    except pg.Error as error:
+        connect.rollback();                                                             # rollback em caso de erro
+        raise RuntimeError (f"Falha na query \"dbVerifyReceptorExistsQuery\": {error}") # trata erros de execução da query
     
     # Fecha o cursor
     finally: 
         if cur is not None:
             cur.close()
+
+    # Retorna o resultado da verificação   
+    return result                                       
+
+# Query para inserção de pessoa
+dbInsertPessoaQuery = """
+    INSERT INTO pessoa (cpf, rg, uf, nome, contato, cidade, bairro, rua, numero, fator_rh, fator_abo
+    , fator_ee, fator_cc, fator_kk)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    RETURNING id;
+"""
+
+"""
+    Função para inserir uma nova pessoa no banco de dados
+    Parametros:
+        - connect: conexão com o banco de dados PostgreSQL
+        - params: lista contendo os dados da pessoa a ser inserida
+    Retorna: 
+        - id: ID da pessoa inserida, ou None se a inserção falhar
+"""
+def insert_pessoa(connect: pg.extensions.connection, params: list) -> int | None:
+    # Inicializa variáveis
+    cur: pg.extensions.connection | None = None
+    id: int | None = None
+
+    # Executa a query para inserção de pessoam com dados do receptor
+    try:
+        cur = connect.cursor()                              # cria o cursor para executar a query
+        cur.execute(dbInsertPessoaQuery, params)            # executa a query com parâmetros fornecidos
+        tuple = cur.fetchone()                              # obtenção de uma linha d resultado da operação
+        if tuple is not None:                               # se a inserção ocorreu adequadamente, extrai id
+            id = tuple[0]
+        connect.commit()                                    # confirma a transação       
+
+    # Trata erros de execução da query
+    except pg.Error as error:
+        connect.rollback();                                                     # rollback em caso de erro
+        raise RuntimeError (f"Falha na query \"dbInsertPessoaQuery\": {error}") # trata erros de execução da query
+    
+    # Fecha o cursor
+    finally: 
+        if cur is not None:
+            cur.close()
+
+    # Retorna id da tupla inserida em pessoa 
+    return id
+
+# Query para inserção de receptor
+dbInsertReceptorQuery = """
+    INSERT INTO receptor (id)
+    VALUES (%s)
+"""
+
+"""
+    Função para inserir um novo receptor no banco de dados
+    Parametros:
+        - connect: conexão com o banco de dados PostgreSQL
+        - id: ID da pessoa a ser inserida como receptor"""
+def insert_receptor(connect: pg.extensions.connection, id: int) -> None:
+    # Inicializa variáveis
+    cur: pg.extensions.connection | None = None
+
+    # Executa a query para inserção de receptor
+    try:
+        cur = connect.cursor()                              # cria o cursor para executar a query
+        cur.execute(dbInsertReceptorQuery, [id])            # executa a query com id fornecido
+        connect.commit()                                    # confirma a transação       
+
+    # Trata erros de execução da query
+    except pg.Error as error:
+        connect.rollback();                                                       # rollback em caso de erro
+        raise RuntimeError (f"Falha na query \"dbInsertReceptorQuery\": {error}") # trata erros de execução da query
+    
+    # Fecha o cursor
+    finally: 
+        if cur is not None:
+            cur.close()
+
+"""
+    Função para registrar um novo receptor no sistema
+    Parametros:
+        - connect: conexão com o banco de dados PostgreSQL
+"""
+def register_receptor(connect: pg.extensions.connection) -> None:
+    try:
+        # Obtém os dados do formulário de registro de receptor
+        form = register_receptor_form()
+
+        # Tenta obter o ID da pessoa a partir do CPF fornecido
+        id = get_pessoa_id(connect, form[0])
+
+        # Verifica se a pessoa já existe no banco de dados
+        if id is None:
+            # Insere a nova pessoa no banco de dados
+            id = insert_pessoa(connect, form)
+            if id is None:
+                print("Falha ao cadastrar a pessoa.")
+                return
+            
+        # Verifica se o receptor já está cadastrado
+        if verify_receptor_exists(connect, id):
+            print("Receptor já cadastrado no sistema.")
+            return
+        
+        # Insere o receptor no banco de dados
+        insert_receptor(connect, id)
+
+    # Trata erros durante o processo de cadastro
+    except RuntimeError as error:
+        print(f"Erro ao cadastrar receptor: {error}")
+        return
+    
+    # Confirma o sucesso do cadastro
+    print("Receptor cadastrado com sucesso.")
+
+#=========================================================================================================#
+#Obtenção de locais com estoque de sangue compatível ao receptor
 
         
 #=========================================================================================================#
@@ -223,6 +335,7 @@ def main():
         # Executa a ação correspondente à opção escolhida            
         match command:
             case 1:
+                register_receptor(connect)
                 continue
             case 2:
                 continue
