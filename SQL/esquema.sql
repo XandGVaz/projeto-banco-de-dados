@@ -90,6 +90,7 @@ CREATE TABLE IF NOT EXISTS pessoa (
 	cpf		CHAR(11)	NOT NULL,
 	rg	        VARCHAR(8)	NOT NULL,
         uf              CHAR(2)         NOT NULL,
+        nome            VARCHAR(40)     NOT NULL,
 	contato 	VARCHAR(11),
 	cidade 		VARCHAR(40),		
 	bairro		VARCHAR(40),		
