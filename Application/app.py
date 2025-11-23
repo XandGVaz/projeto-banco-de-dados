@@ -374,7 +374,6 @@ dbGetLocationsWithBloodTypeQuery = """
         AND i.fator_ee = %s
         AND i.fator_cc = %s
         AND i.fator_kk = %s
-        AND 
 """
 
 """
