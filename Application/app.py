@@ -464,10 +464,6 @@ def main():
                 connect.close()
                 sys.exit(1)
                 
-        
-
-
-
 # Ponto de entrada do script
 if __name__ == "__main__":
     main()

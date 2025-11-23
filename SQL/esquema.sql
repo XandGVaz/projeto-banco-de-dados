@@ -14,11 +14,15 @@ CREATE TABLE IF NOT EXISTS local (
 	cidade		VARCHAR(40),
 	bairro		VARCHAR(40),
 	rua		VARCHAR(40),
-	numero		INT		CHECK(numero >= 0),
+	numero		INT,
 	capacidade	BIGINT,	
-	tipo		VARCHAR(10)	NOT NULL CHECK(tipo IN('HEMONUCLEO', 'HOSPITAL', 'AMBULANCIA')),
+	tipo		VARCHAR(10)	NOT NULL,
 	CONSTRAINT	pk_local	PRIMARY KEY(id),
-	CONSTRAINT	sk_local	UNIQUE(cnpj_placa)
+	CONSTRAINT	sk_local	UNIQUE(cnpj_placa),
+        CONSTRAINT      cnpj_placa_len  CHECK( (LENGTH(cnpj_placa) = 7 AND tipo = 'AMBULANCIA') OR ( LENGTH(cnpj_placa) = 14 AND tipo != 'AMBULANCIA') ),
+        CONSTRAINT      ck_tipo         CHECK(tipo IN('HEMONUCLEO', 'HOSPITAL', 'AMBULANCIA')),
+        CONSTRAINT      ck_numero       CHECK(numero >= 0)   
+      
 );
 
 -- Criacao da tabela "Hemonucleo"
@@ -49,14 +53,20 @@ CREATE TABLE IF NOT EXISTS ambulancia (
 -- Criacao da tabela "Inventario"
 CREATE TABLE IF NOT EXISTS inventario (
 	local		INT			NOT NULL,
-	fator_rh	CHAR(1)			NOT NULL CHECK(fator_rh IN ('+','-')),
-	fator_abo	VARCHAR(2)		NOT NULL CHECK(fator_abo IN ('AB', 'A', 'B', 'O')),
-	fator_ee	CHAR(1)		    	NOT NULL CHECK(fator_ee IN ('E', 'e')),
-	fator_cc	CHAR(1)		    	NOT NULL CHECK(fator_cc IN ('C', 'c')),
-	fator_kk	CHAR(1)		    	NOT NULL CHECK(fator_kk IN ('K', 'k')),
-	estoque		INT			NOT NULL CHECK(estoque >= 0),
+	fator_rh	CHAR(1)			NOT NULL,
+	fator_abo	VARCHAR(2)		NOT NULL, 
+	fator_ee	CHAR(1)		    	NOT NULL,
+	fator_cc	CHAR(1)		    	NOT NULL, 
+	fator_kk	CHAR(1)		    	NOT NULL, 
+	estoque		INT			NOT NULL,
 	CONSTRAINT      pk_inventario		PRIMARY KEY(local, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk),
-	CONSTRAINT 	fk_inventario_local	FOREIGN KEY(local) REFERENCES local(id) ON DELETE CASCADE			
+	CONSTRAINT 	fk_inventario_local	FOREIGN KEY(local) REFERENCES local(id) ON DELETE CASCADE,
+        CONSTRAINT      ck_fator_rh             CHECK(fator_rh IN ('+','-')),
+        CONSTRAINT      ck_fator_abo            CHECK(fator_abo IN ('AB', 'A', 'B', 'O')),
+        CONSTRAINT      ck_fator_ee             CHECK(fator_ee IN ('E', 'e')),
+        CONSTRAINT      ck_fator_cc             CHECK(fator_cc IN ('C', 'c')),
+        CONSTRAINT      ck_fator_kk             CHECK(fator_kk IN ('K', 'k')),
+        CONSTRAINT      ck_estoque              CHECK(estoque >= 0)
 );
 
 -- Criacao da tabela "Transferencia"
@@ -74,14 +84,20 @@ CREATE TABLE IF NOT EXISTS transferencia (
 -- Criacao da tabela "Nro_Bolsas"
 CREATE TABLE IF NOT EXISTS nro_bolsas (
         transferencia   INT                     NOT NULL,
-        fator_rh        CHAR(1)                 NOT NULL CHECK(fator_rh IN ('+','-')),
-        fator_abo       VARCHAR(2)              NOT NULL CHECK(fator_abo IN ('AB', 'A', 'B', 'O')),
-        fator_ee        CHAR(1)                 NOT NULL CHECK(fator_ee IN ('E', 'e')),
-        fator_cc        CHAR(1)                 NOT NULL CHECK(fator_cc IN ('C', 'c')),
-        fator_kk        CHAR(1)                 NOT NULL CHECK(fator_kk IN ('K', 'k')),
-        quantidade      INT                     NOT NULL CHECK(quantidade >= 0),
+        fator_rh        CHAR(1)                 NOT NULL,
+        fator_abo       VARCHAR(2)              NOT NULL,
+        fator_ee        CHAR(1)                 NOT NULL,
+        fator_cc        CHAR(1)                 NOT NULL,
+        fator_kk        CHAR(1)                 NOT NULL,
+        quantidade      INT                     NOT NULL,
         CONSTRAINT      pk_nro_bolsas           PRIMARY KEY(transferencia, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk),
-        CONSTRAINT      fk_nro_bolsas_transf    FOREIGN KEY(transferencia) REFERENCES transferencia(id) ON DELETE CASCADE                       
+        CONSTRAINT      fk_nro_bolsas_transf    FOREIGN KEY(transferencia) REFERENCES transferencia(id) ON DELETE CASCADE,                       
+        CONSTRAINT      ck_fator_rh             CHECK(fator_rh IN ('+','-')),
+        CONSTRAINT      ck_fator_abo            CHECK(fator_abo IN ('AB', 'A', 'B', 'O')),
+        CONSTRAINT      ck_fator_ee             CHECK(fator_ee IN ('E', 'e')),
+        CONSTRAINT      ck_fator_cc             CHECK(fator_cc IN ('C', 'c')),
+        CONSTRAINT      ck_fator_kk             CHECK(fator_kk IN ('K', 'k')),
+        CONSTRAINT      ck_quantidade           CHECK(quantidade >= 0)
 );
 
 -- Criacao da tabela "Pessoa"
@@ -95,15 +111,21 @@ CREATE TABLE IF NOT EXISTS pessoa (
 	cidade 		VARCHAR(40),		
 	bairro		VARCHAR(40),		
 	rua		VARCHAR(40),					
-	numero		INT		CHECK (numero >= 0),
-	fator_rh	CHAR(1)		NOT NULL CHECK(fator_rh IN ('+','-')),
-	fator_abo	VARCHAR(2)	NOT NULL CHECK(fator_abo IN ('AB', 'A', 'B', 'O')),
-	fator_ee	CHAR(1)	        NOT NULL CHECK(fator_ee IN ('E', 'e')),
-	fator_cc	CHAR(1)	        NOT NULL CHECK(fator_cc IN ('C', 'c')),
-	fator_kk	CHAR(1)	        NOT NULL CHECK(fator_kk IN ('K', 'k')),
+	numero		INT,
+	fator_rh	CHAR(1)		NOT NULL,
+	fator_abo	VARCHAR(2)	NOT NULL,
+	fator_ee	CHAR(1)	        NOT NULL,
+	fator_cc	CHAR(1)	        NOT NULL,
+	fator_kk	CHAR(1)	        NOT NULL,
 	CONSTRAINT 	pk_pessoa	PRIMARY KEY(ID),
 	CONSTRAINT 	sk_pessoa 	UNIQUE(cpf),
-	CONSTRAINT	tk_pessoa       UNIQUE(rg, uf)
+	CONSTRAINT	tk_pessoa       UNIQUE(rg, uf),
+        CONSTRAINT      ck_numero       CHECK (numero >= 0),
+        CONSTRAINT      ck_fator_rh     CHECK(fator_rh IN ('+','-')),
+        CONSTRAINT      ck_fator_abo    CHECK(fator_abo IN ('AB', 'A', 'B', 'O')),
+        CONSTRAINT      ck_fator_ee     CHECK(fator_ee IN ('E', 'e')),
+        CONSTRAINT      ck_fator_cc     CHECK(fator_cc IN ('C', 'c')),
+        CONSTRAINT      ck_fator_kk     CHECK(fator_kk IN ('K', 'k'))
 );
 
 -- Criacao da tabela "Profissional"
@@ -133,7 +155,7 @@ CREATE TABLE IF NOT EXISTS receptor (
 
 -- Criacao da tabela "Doacao"
 CREATE TABLE IF NOT EXISTS doacao (
-	id		BIGINT			NOT NULL,
+	id		BIGSERIAL		NOT NULL,
 	doador		BIGINT			NOT NULL,
 	hemonucleo	INT			NOT NULL,
 	data		TIMESTAMP		NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -172,20 +194,28 @@ CREATE TABLE IF NOT EXISTS socorrimento (
 -- Criacao da tabela "Bolsa_de_sangue"
 CREATE TABLE IF NOT EXISTS bolsa_de_sangue (
 	doacao			BIGINT		        NOT NULL,
-	numero			INT			NOT NULL CHECK(numero >= 1 AND numero <= 4),
-	volueme_real	        INT		        NOT NULL CHECK(volueme_real >= 1 AND volueme_real <= 450),
+	numero			INT			NOT NULL,
+	volueme_real	        INT		        NOT NULL,
 	local_atual		INT			NOT NULL,
-	fator_rh		CHAR(1)			NOT NULL CHECK(fator_rh IN ('+','-')),
-	fator_abo		VARCHAR(2)              NOT NULL CHECK(fator_abo IN ('AB', 'A', 'B', 'O')),
-	fator_ee		CHAR(1)		    	NOT NULL CHECK(fator_ee IN ('E', 'e')),
-	fator_cc		CHAR(1)		    	NOT NULL CHECK(fator_cc IN ('C', 'c')),
-	fator_kk		CHAR(1)		    	NOT NULL CHECK(fator_kk IN ('K', 'k')),
+	fator_rh		CHAR(1)			NOT NULL,
+	fator_abo		VARCHAR(2)              NOT NULL,
+	fator_ee		CHAR(1)		    	NOT NULL,
+	fator_cc		CHAR(1)		    	NOT NULL,
+	fator_kk		CHAR(1)		    	NOT NULL,
 	solicitacao		BIGINT,				
 	socorrimento	        BIGINT,
 	CONSTRAINT		pk_bolsa_de_sangue 	PRIMARY KEY(doacao, numero),
 	CONSTRAINT		fk_bolsa_doacao	        FOREIGN KEY(doacao) REFERENCES doacao(id) ON DELETE CASCADE,
 	CONSTRAINT		fk_bolsa_solicitacao    FOREIGN KEY(solicitacao) REFERENCES solicitacao(id) ON DELETE CASCADE,
-	CONSTRAINT		fk_bolsa_socorrimento   FOREIGN KEY(socorrimento) REFERENCES socorrimento(id) ON DELETE CASCADE
+	CONSTRAINT		fk_bolsa_socorrimento   FOREIGN KEY(socorrimento) REFERENCES socorrimento(id) ON DELETE CASCADE,
+        CONSTRAINT              ck_numero               CHECK(numero >= 1 AND numero <= 4),
+        CONSTRAINT              ck_vlume_real           CHECK(volueme_real >= 1 AND volueme_real <= 450),
+        CONSTRAINT              ck_fator_rh             CHECK(fator_rh IN ('+','-')),
+        CONSTRAINT              ck_fator_abo            CHECK(fator_abo IN ('AB', 'A', 'B', 'O')),
+        CONSTRAINT              ck_fator_ee             CHECK(fator_ee IN ('E', 'e')),
+        CONSTRAINT              ck_fator_cc             CHECK(fator_cc IN ('C', 'c')),
+        CONSTRAINT              ck_fator_kk             CHECK(fator_kk IN ('K', 'k')),
+        CONSTRAINT              ck_soli_socorr          CHECK((solicitacao IS NULL) OR (socorrimento IS NULL))
 );
 
 /*
