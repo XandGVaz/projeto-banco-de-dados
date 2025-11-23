@@ -384,11 +384,11 @@ dbGetLocationsWithBloodTypeQuery = """
     Retorna: 
         - locations: lista de locais com estoque do tipo sanguíneo consultado, ou None se nenhum local for encontrado
 """
-def get_locations_with_blood_type(connect: pg.extensions.connection, params: list) -> list | None:
+def get_locations_with_blood_type(connect: pg.extensions.connection, params: list) -> list:
     
     # Inicializa variáveis
     cur: pg.extensions.connection | None = None
-    locations: list | None = None
+    locations: list = []
     
     # Executa a query para obter o ID da pessoa
     try:
@@ -429,11 +429,11 @@ def consult_locations_with_blood_type(connect: pg.extensions.connection) -> None
         locations = get_locations_with_blood_type(connect, form)
         
         # Exibe os locais encontrados
-        print("================== Locais com estoque do tipo sanguíneo consultado ==================")
+        print("\n================== Locais com estoque do tipo sanguíneo consultado ==================")
         for location in locations:
             id, tipo, quantidade = location
             print(f"Local: {id}, Tipo: {tipo}, Quantidade em estoque: {quantidade}")
-        print("====================================================================\n\n")
+        print("\n\n")
 
     # Trata erros durante o processo de consulta
     except RuntimeError as error:
