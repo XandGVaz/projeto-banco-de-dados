@@ -7,19 +7,19 @@
                - Vitor Alexandre Garcia Vaz - 14611432
 */
 
---------------- Consulta 01 --------------------------
+--------------- Consulta 01 ----------------------------------------------------------
 
 
 
 
 
---------------- Consulta 02 --------------------------
+--------------- Consulta 02 ----------------------------------------------------------
 
 
 
 
 
---------------- Consulta 03 --------------------------
+--------------- Consulta 03 ----------------------------------------------------------
 /* 
         Esta consulta retorna para cada profissional todos os profissionas compatíveis
 ,ou seja, aqueles que já atenderam todos os doadores atendidos pelo profissional
@@ -57,10 +57,17 @@ RIGHT JOIN profissional PR ON NOT EXISTS (
         AND OPR.id != PR.id
 INNER JOIN pessoa PE ON PR.id = PE.id;
 
---------------- Consulta 04 --------------------------
+/*
+        OBS: a comparação OPR.id != PR.id não pode estar em WHERE, pois isso
+transformaria a consulta em INNER JOIN, devido à filtragem de colunas NULL, o 
+que impediria a obtenção de profissionais sem um conjunto de outros profissionais 
+compatíveis.
+*/
+
+--------------- Consulta 04 ----------------------------------------------------------
 
 
 
 
 
---------------- Consulta 05 --------------------------
+--------------- Consulta 05 ----------------------------------------------------------
