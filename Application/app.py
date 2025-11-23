@@ -325,7 +325,7 @@ def register_receptor(connect: pg.extensions.connection) -> None:
     print("================== Receptor cadastrado com sucesso ================== \n\n ")
 
 #=========================================================================================================#
-# Obtenção de locais com estoque de sangue de um dado tipo
+# Obtenção de locais com estoque de bolsas de sangue disponíveis de um dado tipo
 
 """
     Função para exibir o formulário de busca de locais com estoque de sangue de um dado tipo
@@ -374,6 +374,7 @@ dbGetLocationsWithBloodTypeQuery = """
         AND i.fator_ee = %s
         AND i.fator_cc = %s
         AND i.fator_kk = %s
+        AND 
 """
 
 """

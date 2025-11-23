@@ -223,6 +223,7 @@ CREATE TABLE IF NOT EXISTS bolsa_de_sangue (
 	para uma mesma doação. Isso pode ser feito com um trigger
 */
 
+
 -- Criacao da tabela "Envolve"
 CREATE TABLE IF NOT EXISTS envolve (
 	transferencia	        BIGINT				NOT NULL,

@@ -400,6 +400,20 @@ SET local_atual = (SELECT id FROM local WHERE cnpj_placa = '6666666')
 WHERE doacao = 6 AND numero = 1;
 
 
+-- Insercao em inventario para os locais com base nas bolsas inseridas/atualizadas acima
+INSERT INTO inventario (local, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk, estoque)
+SELECT b.local_atual AS local,
+       b.fator_rh,
+       b.fator_abo,
+       b.fator_ee,
+       b.fator_cc,
+       b.fator_kk,
+       COUNT(*) AS estoque
+FROM bolsa_de_sangue b
+GROUP BY b.local_atual, b.fator_rh, b.fator_abo, b.fator_ee, b.fator_cc, b.fator_kk
+ORDER BY b.local_atual;
+
+
 -- Insercao de 3 socorrimentos para algumas das primeiras 6 bolsas (doacoes 1..3)
 --      Usam ambulancias cadastradas via local cnpj_placa '3333333' e '6666666'
 --      1.1) Insercao dos socorrimentos em si
@@ -430,9 +444,36 @@ WHERE doacao = 2 AND numero = 1;
 UPDATE bolsa_de_sangue
 SET socorrimento = 3
 WHERE doacao = 3 AND numero = 1;
+--- 1.3) Atualizacao do inventario para os locais envolvidos nos socorrimentos acima
+UPDATE inventario
+SET estoque = estoque - 1
+WHERE local = (SELECT local_atual FROM bolsa_de_sangue WHERE doacao = 1 AND numero = 1)
+  AND fator_rh = (SELECT fator_rh FROM bolsa_de_sangue WHERE doacao = 1 AND numero = 1)
+  AND fator_abo = (SELECT fator_abo FROM bolsa_de_sangue WHERE doacao = 1 AND numero = 1)
+  AND fator_ee = (SELECT fator_ee FROM bolsa_de_sangue WHERE doacao = 1 AND numero = 1)
+  AND fator_cc = (SELECT fator_cc FROM bolsa_de_sangue WHERE doacao = 1 AND numero = 1)
+  AND fator_kk = (SELECT fator_kk FROM bolsa_de_sangue WHERE doacao = 1 AND numero = 1);
+
+UPDATE inventario
+SET estoque = estoque - 1
+WHERE local = (SELECT local_atual FROM bolsa_de_sangue WHERE doacao = 2 AND numero = 1)
+  AND fator_rh = (SELECT fator_rh FROM bolsa_de_sangue WHERE doacao = 2 AND numero = 1)
+  AND fator_abo = (SELECT fator_abo FROM bolsa_de_sangue WHERE doacao = 2 AND numero = 1)
+  AND fator_ee = (SELECT fator_ee FROM bolsa_de_sangue WHERE doacao = 2 AND numero = 1)
+  AND fator_cc = (SELECT fator_cc FROM bolsa_de_sangue WHERE doacao = 2 AND numero = 1)
+  AND fator_kk = (SELECT fator_kk FROM bolsa_de_sangue WHERE doacao = 2 AND numero = 1);
+
+UPDATE inventario
+SET estoque = estoque - 1
+WHERE local = (SELECT local_atual FROM bolsa_de_sangue WHERE doacao = 3 AND numero = 1)
+  AND fator_rh = (SELECT fator_rh FROM bolsa_de_sangue WHERE doacao = 3 AND numero = 1)
+  AND fator_abo = (SELECT fator_abo FROM bolsa_de_sangue WHERE doacao = 3 AND numero = 1)
+  AND fator_ee = (SELECT fator_ee FROM bolsa_de_sangue WHERE doacao = 3 AND numero = 1)
+  AND fator_cc = (SELECT fator_cc FROM bolsa_de_sangue WHERE doacao = 3 AND numero = 1)
+  AND fator_kk = (SELECT fator_kk FROM bolsa_de_sangue WHERE doacao = 3 AND numero = 1);
 
 
--- Insercao de 3 solicitacoes para algumas das primeiras 6 bolsas (doacoes 4..6)
+-- Insercao de 3 solicitacoes para algumas das ultimas 6 bolsas (doacoes 7..9)
 --      Usam hospitais cadastrados via local cnpj_placa '22222222222222' e '55555555555555')
 --      2.1) Insercao das solicitacoes em si
 INSERT INTO solicitacao (hospital, receptor, data)
@@ -464,20 +505,33 @@ WHERE doacao = 8 AND numero = 1;
 UPDATE bolsa_de_sangue
 SET solicitacao = 3
 WHERE doacao = 9 AND numero = 1;
+--- 2.3) Atualizacao do inventario para os locais envolvidos nas solicitacoes acima
+UPDATE inventario
+SET estoque = estoque - 1
+WHERE local = (SELECT local_atual FROM bolsa_de_sangue WHERE doacao = 7 AND numero = 1)
+  AND fator_rh = (SELECT fator_rh FROM bolsa_de_sangue WHERE doacao = 7 AND numero = 1)
+  AND fator_abo = (SELECT fator_abo FROM bolsa_de_sangue WHERE doacao = 7 AND numero = 1)
+  AND fator_ee = (SELECT fator_ee FROM bolsa_de_sangue WHERE doacao = 7 AND numero = 1)
+  AND fator_cc = (SELECT fator_cc FROM bolsa_de_sangue WHERE doacao = 7 AND numero = 1)
+  AND fator_kk = (SELECT fator_kk FROM bolsa_de_sangue WHERE doacao = 7 AND numero = 1);
 
+UPDATE inventario
+SET estoque = estoque - 1
+WHERE local = (SELECT local_atual FROM bolsa_de_sangue WHERE doacao = 8 AND numero = 1)
+  AND fator_rh = (SELECT fator_rh FROM bolsa_de_sangue WHERE doacao = 8 AND numero = 1)
+  AND fator_abo = (SELECT fator_abo FROM bolsa_de_sangue WHERE doacao = 8 AND numero = 1)
+  AND fator_ee = (SELECT fator_ee FROM bolsa_de_sangue WHERE doacao = 8 AND numero = 1)
+  AND fator_cc = (SELECT fator_cc FROM bolsa_de_sangue WHERE doacao = 8 AND numero = 1)
+  AND fator_kk = (SELECT fator_kk FROM bolsa_de_sangue WHERE doacao = 8 AND numero = 1);
 
--- Insercao em inventario para os locais com base nas bolsas inseridas/atualizadas acima
-INSERT INTO inventario (local, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk, estoque)
-SELECT b.local_atual AS local,
-       b.fator_rh,
-       b.fator_abo,
-       b.fator_ee,
-       b.fator_cc,
-       b.fator_kk,
-       COUNT(*) AS estoque
-FROM bolsa_de_sangue b
-GROUP BY b.local_atual, b.fator_rh, b.fator_abo, b.fator_ee, b.fator_cc, b.fator_kk
-ORDER BY b.local_atual;
+UPDATE inventario
+SET estoque = estoque - 1
+WHERE local = (SELECT local_atual FROM bolsa_de_sangue WHERE doacao = 9 AND numero = 1)
+  AND fator_rh = (SELECT fator_rh FROM bolsa_de_sangue WHERE doacao = 9 AND numero = 1)
+  AND fator_abo = (SELECT fator_abo FROM bolsa_de_sangue WHERE doacao = 9 AND numero = 1)
+  AND fator_ee = (SELECT fator_ee FROM bolsa_de_sangue WHERE doacao = 9 AND numero = 1)
+  AND fator_cc = (SELECT fator_cc FROM bolsa_de_sangue WHERE doacao = 9 AND numero = 1)
+  AND fator_kk = (SELECT fator_kk FROM bolsa_de_sangue WHERE doacao = 9 AND numero = 1);
 
 
 
