@@ -39,7 +39,7 @@ FROM profissional OPR
 INNER JOIN pessoa OPE ON OPR.id = OPE.id
 RIGHT JOIN profissional PR ON NOT EXISTS (
                 (
-                        SELECT 
+                        SELECT DISTINCT
                                 d.doador as "doador"
                         FROM profissional p
                         INNER JOIN doacao d ON d.profissional = p.id
@@ -47,7 +47,7 @@ RIGHT JOIN profissional PR ON NOT EXISTS (
                 )
                 EXCEPT
                 (
-                        SELECT 
+                        SELECT DISTINCT
                                 d.doador as "doador"
                         FROM profissional p
                         INNER JOIN doacao d ON d.profissional = p.id
