@@ -35,9 +35,9 @@ def connect_db() -> pg.extensions.connection:
 
     # Define os parâmetros de conexão usando as variáveis de ambiente
     db_params = {
-        "database": os.getenv("DB_DATABASE", "projeto-banco-de-dados"),
-        "user":     os.getenv("DB_USER", "postgres"),
-        "password": os.getenv("DB_PASSWORD", "postgres"),
+        "database": os.getenv("DB_DATABASE"),
+        "user":     os.getenv("DB_USER"),
+        "password": os.getenv("DB_PASSWORD"),
         "host":     os.getenv("DB_HOST", "localhost"),
         "port":     int(os.getenv("DB_PORT", "5432"))
     }
