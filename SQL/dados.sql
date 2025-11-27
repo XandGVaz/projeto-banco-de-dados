@@ -20,6 +20,8 @@ INSERT INTO local (cnpj_placa, cidade, bairro, rua, numero, capacidade, tipo)
 VALUES('55555555555555', 'SAO CARLOS', 'JARDIM BANDEIRANTES', 'ALAMEDA DAS CASCATAS', 16, 20000, 'HOSPITAL');
 INSERT INTO local (cnpj_placa, cidade, bairro, rua, numero, capacidade, tipo)
 VALUES('6666666', 'SAO CARLOS', NULL, NULL, NULL, 100, 'AMBULANCIA');
+INSERT INTO local (cnpj_placa, cidade, bairro, rua, numero, capacidade, tipo)
+VALUES('77777777777777', 'SAO CARLOS', 'JARDIM PARAISO', 'MAESTRO JOAO SEPPE', 2, 100000, 'HEMONUCLEO');
 
 
 -- Insercao de hemonucleos
