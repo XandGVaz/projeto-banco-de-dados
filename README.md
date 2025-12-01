@@ -12,7 +12,6 @@ projeto-banco-de-dados/
 ├── Application
 │   └── app.py
 ├── Docs
-│   ├── Relatorio_Base_de_Dados.pdf
 │   ├── Sangue_MER.drawio
 │   ├── Sangue_MER.jpg
 │   ├── Sangue_Relacional.drawio
