@@ -120,7 +120,7 @@ VALUES (8, (SELECT id FROM hemonucleo WHERE id = (SELECT id FROM local WHERE cnp
 
 -- Insercao de bolsas_de_sangue (uma bolsa por doacao inserida acima)
 --      Cada bolsa referencia a doacao via subselect e copia os fatores sanguineos da pessoa doadora
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -129,7 +129,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 1;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -138,7 +138,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 2;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -147,7 +147,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 3;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -156,7 +156,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 4;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -165,7 +165,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 5;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -174,7 +174,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 6;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -183,7 +183,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 7;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -192,7 +192,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 8;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -201,7 +201,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 9;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -210,7 +210,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 10;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
@@ -219,7 +219,7 @@ JOIN doador dd ON dc.doador = dd.id
 JOIN pessoa p ON dd.id = p.id
 WHERE dc.id = 11;
 
-INSERT INTO bolsa_de_sangue (doacao, numero, volueme_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
+INSERT INTO bolsa_de_sangue (doacao, numero, volume_real, local_atual, fator_rh, fator_abo, fator_ee, fator_cc, fator_kk)
 SELECT dc.id, 1, 450,
        dc.hemonucleo,
        p.fator_rh, p.fator_abo, p.fator_ee, p.fator_cc, p.fator_kk
