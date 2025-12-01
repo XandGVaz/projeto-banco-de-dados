@@ -66,6 +66,7 @@ compatíveis.
 
 --------------- Consulta 04 ----------------------------------------------------------
 /*
+VERSAO NÃO OTIMIZADA
         Esta consulta retorna, para cada hemocentro, o doador com maior número de doações. Em 
 especial os atributos retornados são o id do doador, seu nome, o id do hemonucleo e o número
 de doações.
@@ -99,7 +100,35 @@ LEFT JOIN contagem_doacoes CD ON HN.id = CD.hemonucleo_id
 LEFT JOIN pessoa PE ON PE.id = CD.doador
 ORDER BY HN.id;
 
+/*
+VERSÃO OTIMIZADA
+        A query inicia selecionando o id_doador, o nome_doador, o id_hemonucleo e o Nro_doacoes,
+utilizando COALESCE para substituir NULL por 0. Dentro do LEFT JOIN, a subquery agrupa todas as 
+doacoes por hemonucleo e doador (em GROUP BY), contando quantas doacoes cada doador fez em cada
+hemonucleo. PARTITION particiona por hemonúcleo o quantas doações cada doador fez neste, enquanto
+o MAX(COUNT()) conta o valor máximo em cada partição.
+        Esta solução evita um SELECT externo com a mesma tabela usada em WITH, oq gerava redundancia
+de busca e subotimização.
+*/
 
+SELECT 
+    HN.id AS "id_hemonucleo",
+    contagens.doador AS "id_doador", 
+    PE.nome AS "nome_doador",
+    COALESCE(contagens.total_doacoes, 0) AS "Nro_doacoes"
+FROM hemonucleo HN
+LEFT JOIN (
+    SELECT 
+        hemonucleo,
+        doador,
+        COUNT(*) AS total_doacoes,
+        MAX(COUNT(*)) OVER (PARTITION BY hemonucleo) AS max_doacoes
+    FROM doacao
+    GROUP BY hemonucleo, doador
+) contagens ON HN.id = contagens.hemonucleo
+           AND contagens.total_doacoes = contagens.max_doacoes
+LEFT JOIN pessoa PE ON PE.id = contagens.doador
+ORDER BY HN.id;
 
 --------------- Consulta 05 ----------------------------------------------------------
 /* 
