@@ -153,17 +153,15 @@ RIGHT JOIN profissional PR ON NOT EXISTS (
                 (
                         SELECT DISTINCT
                                 d.doador as "doador"
-                        FROM profissional p
-                        INNER JOIN doacao d ON d.profissional = p.id
-                        WHERE p.id = PR.id                        
+                        FROM  doacao d
+                        WHERE profissional = PR.id                        
                 )
                 EXCEPT
                 (
                         SELECT DISTINCT
                                 d.doador as "doador"
-                        FROM profissional p
-                        INNER JOIN doacao d ON d.profissional = p.id
-                        WHERE p.id = OPR.id       
+                        FROM doacao d
+                        WHERE d.profissional = OPR.id       
                 )
         )
         AND OPR.id != PR.id
