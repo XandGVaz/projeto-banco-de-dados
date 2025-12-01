@@ -128,6 +128,7 @@ HAVING
 ORDER BY
         R.id,
         L.id;
+        
 --------------- Consulta 03 ----------------------------------------------------------
 /* 
         Esta consulta retorna para cada profissional todos os profissionas compatíveis
@@ -145,7 +146,9 @@ SELECT
         OPR.id AS "id_profissional_compativel",
         OPE.nome AS "nome_profissional_compativel"
 FROM profissional OPR
+-- INNER JOIN para obter nome de profissionais compatíveis
 INNER JOIN pessoa OPE ON OPR.id = OPE.id
+-- RIGHT JOIN para obter profissionais em questão (mesmo que não tenham compatíveis)
 RIGHT JOIN profissional PR ON NOT EXISTS (
                 (
                         SELECT DISTINCT
